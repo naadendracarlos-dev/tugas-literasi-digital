@@ -1,0 +1,94 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: #f4f6f9;
+    margin: 0;
+    padding: 0;
+}
+
+/* WRAPPER UTAMA */
+.container {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* FOTO KELOMPOK */
+.group-photo img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* DESKRIPSI */
+.desc {
+    margin: 25px auto 45px;
+    max-width: 1000px;
+    font-size: 16px;
+    color: #555;
+    text-align:justify;
+    text-indent:40px;
+    margin-bottom:16px;
+}
+
+/* WRAPPER KOTAK */
+.menu-wrapper {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+/* KOTAK MENU */
+.menu-card {
+    width: 48%;
+    background: white;
+    border-radius: 14px;
+    text-decoration: none;
+    color: #333;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+    transition: 0.3s ease;
+}
+
+.menu-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.menu-card span {
+    display: block;
+    padding: 15px;
+    font-weight: 600;
+}
+
+/* EFEK TIMBUL */
+.menu-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.25);
+}
+
+/* ================= MOBILE MODE ================= */
+@media (max-width: 768px) {
+
+    .container {
+        padding: 0 15px;
+    }
+
+    .menu-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .menu-card {
+        width: 100%;
+    }
+
+    .menu-card img {
+        height: 180px;
+    }
+
+    .desc {
+        text-align: left;
+    }
+}
